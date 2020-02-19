@@ -3,4 +3,5 @@ require 'config/environment'
 
 use ApartmentsController
 use TenantsController
+# use ApplicationController
 run ApplicationController

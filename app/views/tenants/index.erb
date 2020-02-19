@@ -1,6 +1,17 @@
-<h2>All Historical Landmarks</h2>
+<h1>Tenant List</h1>
 
-<!-- add content here -->
+<ul>
+    <% @tenants.each do |tenant| %>
+        <li><a href= "/tenants/<%=tenant.id%>"> <%= tenant.name %> </a></li>
+    <%end%>
+</ul>
 
-<a class="button" href="/figures">Figures</a>
+<button>
+    <a href="/apartments">All Apartment</a>
+</button>
+<button>
+    <a href="/tenants/new">Create New Tenant</a>
+</button>
+
+
 <a class="button" href="/">Home</a>
